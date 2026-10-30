@@ -3,6 +3,7 @@
 @font-face{font-family:"Inter";src:url("fonts/inter-latin-wght-normal.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap;}
 @font-face{font-family:"JetBrains Mono";src:url("fonts/jetbrains-mono-latin-wght-normal.woff2") format("woff2");font-weight:100 800;font-style:normal;font-display:swap;}
 :root{
+  color-scheme: dark;
   /* Colour */
   --color-bg: #0F0C0C;
   --color-surface: #181312;
@@ -31,7 +32,31 @@
   --color-input-bg: #181312;
   --color-focus: #FF6B3D;
   --color-error: #FF5C8A;
-
+}
+/* Light theme: set by data-theme="light" (Light, or System on a light device). */
+:root[data-theme="light"]{
+  color-scheme: light;
+  --color-bg: #FFFAF7;
+  --color-surface: #F6EDE7;
+  --color-card: #FFFFFF;
+  --color-text: #2A1F1B;
+  --color-heading: #0F0C0C;
+  --color-muted: #6B5C55;
+  --color-border: rgba(42,31,27,.14);
+  --color-border-strong: rgba(42,31,27,.45);
+  --color-accent-hover: #E8552A;
+  --color-accent-strong: #B93A0E;
+  --color-accent-soft: rgba(255,107,61,.18);
+  --color-nav-bg: rgba(255,250,247,.85);
+  --color-footer-bg: #F6EDE7;
+  --color-footer-text: #2A1F1B;
+  --color-footer-border: rgba(42,31,27,.14);
+  --color-input-bg: #FFFFFF;
+  --color-focus: #B93A0E;
+  --color-error: #C4124F;
+  --shadow-card: 0 1px 2px rgba(42,31,27,.06);
+}
+:root{
   /* Type */
   --font-display: "Space Grotesk", system-ui, sans-serif;
   --font-body: "Inter", system-ui, sans-serif;

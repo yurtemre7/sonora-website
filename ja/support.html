@@ -24,6 +24,13 @@
 (function(){try{var K='sonora-lang',d=document;
 d.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[hreflang]');if(a)try{localStorage.setItem(K,a.getAttribute('hreflang'));}catch(x){}});
 }catch(e){}})();
+(function(){var K='sonora-theme',m='system',r=document.documentElement,mq=window.matchMedia('(prefers-color-scheme: light)');
+try{m=localStorage.getItem(K)||'system';}catch(e){}
+function apply(){r.setAttribute('data-theme',m==='system'?(mq.matches?'light':'dark'):m);}
+apply();
+if(mq.addEventListener)mq.addEventListener('change',function(){if(m==='system')apply();});
+document.addEventListener('DOMContentLoaded',function(){var sel=document.querySelector('.nav__theme');if(!sel)return;sel.value=m;
+sel.addEventListener('change',function(){m=sel.value;try{if(m==='system')localStorage.removeItem(K);else localStorage.setItem(K,m);}catch(e){}apply();});});})();
 </script>
 <link rel="icon" href="../favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/img/icon-192.png">
@@ -35,7 +42,7 @@ d.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest(
 <body>
 <header class="nav"><div class="container nav__inner">
   <a class="brand" href="index.html"><span class="brand__mark" aria-hidden="true"></span>Sonora</a>
-  <nav class="nav__links" aria-label="メイン"><a href="index.html">ホーム</a><a href="download.html">ダウンロード</a><a href="support.html" aria-current="page">サポート</a><a href="about.html">概要</a><a href="contact.html">お問い合わせ</a><a class="nav__lang" href="../support.html" hreflang="en" lang="en">English</a></nav>
+  <nav class="nav__links" aria-label="メイン"><a href="index.html">ホーム</a><a href="download.html">ダウンロード</a><a href="support.html" aria-current="page">サポート</a><a href="about.html">概要</a><a href="contact.html">お問い合わせ</a><a class="nav__lang" href="../support.html" hreflang="en" lang="en">English</a><select class="nav__theme" aria-label="テーマ"><option value="system">システム</option><option value="light">ライト</option><option value="dark">ダーク</option></select></nav>
   <a class="btn btn--primary nav__cta" href="download.html">ダウンロード</a>
   <button class="nav__toggle" type="button" aria-expanded="false">メニュー</button>
 </div></header>
