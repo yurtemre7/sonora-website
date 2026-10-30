@@ -77,10 +77,13 @@ h1,h2,h3,h4,p,ul,ol,figure,blockquote{margin:0}
 .hero__inner{display:grid;gap:var(--space-5);max-width:var(--hero-width)}
 .hero .btn-row{margin-top:var(--space-3)}
 .hero__meta{display:flex;flex-wrap:wrap;gap:var(--space-2) var(--space-5);margin-top:var(--space-5)}
-.hero__grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:var(--space-7);align-items:end}
+/* Home hero fits the first screen: nav (72px) + hero = one viewport */
+.hero:has(.hero__grid){--nav-h:72px;--hero-h:calc(100svh - var(--nav-h));min-height:var(--hero-h);display:grid;align-items:center;padding:var(--space-6) 0}
+.hero__grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:var(--space-7);align-items:center}
 .hero__grid .hero__inner{max-width:none}
-.hero__grid .device{justify-self:center;margin:0}
-@media (max-width:900px){.hero__grid{grid-template-columns:1fr;gap:var(--space-6)}}
+.hero__grid .display{font-size:min(var(--text-display),9svh)}
+.hero__grid .device{justify-self:center;margin:0;width:min(100%,calc((var(--hero-h) - var(--space-6) * 2) * .54))}
+@media (max-width:900px){.hero:has(.hero__grid){min-height:0;padding:var(--space-5) 0 var(--space-6)}.hero__grid{grid-template-columns:1fr;gap:var(--space-6)}.hero__grid .device{width:100%;max-width:320px}}
 .page-hero{padding:var(--hero-pad) 0 calc(var(--section-pad) * .6)}
 .page-hero .hero__inner{max-width:48rem}
 
