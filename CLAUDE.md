@@ -3,13 +3,12 @@
 Read this first in every new chat or Claude Code session.
 
 ## What we're building
-A website for [your business]: [one sentence on what you do and who it's for].
-(Sample content in this kit is for Relay, simple uptime monitoring for small teams. Replace it with yours.)
+A website for Sonora: a free, open source music player that lets everyday people enjoy their own music library offline on their Android phone. App source: github.com/yurtemre7/sonora.
 
 ## Our Git
-- Design system: github.com/[you]/[yourbrand]-design-system
+- Design system: github.com/yurtemre7/sonora-design-system
   Tokens (`assets/tokens.css`), components (`assets/components.css`), the storybook (`storybook.html`), the design skill (`SKILL.md`), and page designs in `prototypes/`.
-- Website: github.com/[you]/[yourbrand]-website
+- Website: github.com/yurtemre7/sonora-website
   The pages Claude Code builds. `main` is the live site, `staging` is the rehearsal, every change goes through a pull request.
 - The design system repository is the source of truth. The website only uses what is in it.
 
@@ -17,7 +16,7 @@ A website for [your business]: [one sentence on what you do and who it's for].
 Plain HTML, CSS and a little JavaScript. No build step. Hosted on Netlify, connected to the website repository. The contact form uses Netlify Forms.
 
 ## Pages
-`index.html` (home) · `pricing.html` · `about.html` · `contact.html` · `thanks.html` (after the form)
+`index.html` (home) · `download.html` (replaces pricing: the app is free) · `about.html` · `contact.html` · `thanks.html` (after the form) · `impressum.html` · `privacy.html`
 
 ## How we work: the loop
 1. Design in Claude chat: prototype the page, try versions, check phone and desktop.
@@ -35,4 +34,4 @@ Plain HTML, CSS and a little JavaScript. No build step. Hosted on Netlify, conne
 - After building, run the site locally, test phone and desktop, and report what you built, what you tested and every open question, before opening a pull request.
 
 ## Current state
-[What's done, what's next. Update this at the end of each session.]
+First version built 2026-10-30 from the design system, with copy drafted from the app README. Open: no screenshots or app imagery yet (no image component in the design system), privacy text needs a legal check, no real testimonials.
