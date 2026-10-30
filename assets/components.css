@@ -164,6 +164,14 @@ textarea.input{min-height:160px;resize:vertical}
 .device img{width:100%;height:auto}
 @media (max-width:900px){.showcase{grid-template-columns:1fr}}
 
+/* ---------- Feature rows (text + phone) ---------- */
+.stack--feature{display:grid;gap:var(--space-9);margin-bottom:var(--space-9)}
+.split--feature{align-items:center}
+.split--feature .device{justify-self:center;margin:0}
+.split--flip{grid-template-columns:.9fr 1.1fr}
+.split--flip>:first-child{order:2}
+@media (max-width:900px){.stack--feature{gap:var(--space-8);margin-bottom:var(--space-8)}.split--flip>:first-child{order:0}}
+
 /* ---------- Storybook only ---------- */
 .sb-swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:var(--space-3)}
 .sb-swatch{border:var(--border-width) solid var(--color-border);border-radius:var(--radius-card);overflow:hidden;background:var(--color-card)}

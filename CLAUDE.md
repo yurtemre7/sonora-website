@@ -16,7 +16,7 @@ A website for Sonora: a free, open source music player that lets everyday people
 Plain HTML, CSS and a little JavaScript. No build step. Hosted on Netlify, connected to the website repository. The contact form uses Netlify Forms.
 
 ## Pages
-`index.html` (home) · `download.html` (replaces pricing: the app is free) · `about.html` · `contact.html` · `thanks.html` (after the form) · `impressum.html` · `privacy.html`
+`index.html` (home) · `download.html` (replaces pricing: the app is free) · `support.html` (install guide, FAQ) · `about.html` · `contact.html` · `thanks.html` (after the form) · `impressum.html` · `privacy.html` · `accessibility.html` · `404.html`. Japanese versions of the main pages live in `ja/` (legal pages stay English). Also `sitemap.xml`, `robots.txt`, share image `assets/img/og.png`.
 
 ## How we work: the loop
 1. Design in Claude chat: prototype the page, try versions, check phone and desktop.
@@ -34,4 +34,4 @@ Plain HTML, CSS and a little JavaScript. No build step. Hosted on Netlify, conne
 - After building, run the site locally, test phone and desktop, and report what you built, what you tested and every open question, before opening a pull request.
 
 ## Current state
-First version built 2026-10-30 from the design system, with copy drafted from the app README. Open: no screenshots or app imagery yet (no image component in the design system), privacy text needs a legal check, no real testimonials.
+First version built 2026-10-30 from the design system, copy drafted from the app README. Added: phone-frame screenshots, support page, Japanese pages, share image, sitemap. Open: Japanese copy needs a native review, privacy and accessibility texts need a legal check, no real testimonials, phone-frame and feature-row styles are in the website `components.css` but not yet in the design system repo.
