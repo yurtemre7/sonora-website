@@ -77,6 +77,10 @@ h1,h2,h3,h4,p,ul,ol,figure,blockquote{margin:0}
 .hero__inner{display:grid;gap:var(--space-5);max-width:var(--hero-width)}
 .hero .btn-row{margin-top:var(--space-3)}
 .hero__meta{display:flex;flex-wrap:wrap;gap:var(--space-2) var(--space-5);margin-top:var(--space-5)}
+.hero__grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:var(--space-7);align-items:end}
+.hero__grid .hero__inner{max-width:none}
+.hero__grid .device{justify-self:center;margin:0}
+@media (max-width:900px){.hero__grid{grid-template-columns:1fr;gap:var(--space-6)}}
 .page-hero{padding:var(--hero-pad) 0 calc(var(--section-pad) * .6)}
 .page-hero .hero__inner{max-width:48rem}
 
