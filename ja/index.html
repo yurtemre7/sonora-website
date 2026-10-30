@@ -29,7 +29,7 @@ try{m=localStorage.getItem(K)||'system';}catch(e){}
 function apply(){r.setAttribute('data-theme',m==='system'?(mq.matches?'light':'dark'):m);}
 apply();
 if(mq.addEventListener)mq.addEventListener('change',function(){if(m==='system')apply();});
-document.addEventListener('DOMContentLoaded',function(){var sel=document.querySelector('.nav__theme');if(!sel)return;sel.value=m;
+document.addEventListener('DOMContentLoaded',function(){var sel=document.querySelector('.theme-select');if(!sel)return;sel.value=m;
 sel.addEventListener('change',function(){m=sel.value;try{if(m==='system')localStorage.removeItem(K);else localStorage.setItem(K,m);}catch(e){}apply();});});})();
 </script>
 <link rel="icon" href="../favicon.ico" sizes="48x48">
@@ -42,7 +42,7 @@ sel.addEventListener('change',function(){m=sel.value;try{if(m==='system')localSt
 <body>
 <header class="nav"><div class="container nav__inner">
   <a class="brand" href="index.html"><span class="brand__mark" aria-hidden="true"></span>Sonora</a>
-  <nav class="nav__links" aria-label="メイン"><a href="index.html" aria-current="page">ホーム</a><a href="download.html">ダウンロード</a><a href="support.html">サポート</a><a href="about.html">概要</a><a href="contact.html">お問い合わせ</a><a class="nav__lang" href="../index.html" hreflang="en" lang="en">English</a><select class="nav__theme" aria-label="テーマ"><option value="system">システム</option><option value="light">ライト</option><option value="dark">ダーク</option></select></nav>
+  <nav class="nav__links" aria-label="メイン"><a href="index.html" aria-current="page">ホーム</a><a href="download.html">ダウンロード</a><a href="support.html">サポート</a><a href="about.html">概要</a><a href="contact.html">お問い合わせ</a><a class="nav__lang" href="../index.html" hreflang="en" lang="en">English</a></nav>
   <a class="btn btn--primary nav__cta" href="download.html">ダウンロード</a>
   <button class="nav__toggle" type="button" aria-expanded="false">メニュー</button>
 </div></header>
@@ -88,7 +88,7 @@ sel.addEventListener('change',function(){m=sel.value;try{if(m==='system')localSt
 </div></section>
 </main>
 <footer class="footer"><div class="container">
-  <div class="footer__top"><a class="brand" href="index.html"><span class="brand__mark" aria-hidden="true"></span>Sonora</a><nav class="footer__links" aria-label="フッター"><a href="index.html">ホーム</a><a href="download.html">ダウンロード</a><a href="support.html">サポート</a><a href="about.html">概要</a><a href="contact.html">お問い合わせ</a><a href="https://github.com/yurtemre7/sonora">ソースコード</a></nav></div>
+  <div class="footer__top"><a class="brand" href="index.html"><span class="brand__mark" aria-hidden="true"></span>Sonora</a><nav class="footer__links" aria-label="フッター"><a href="index.html">ホーム</a><a href="download.html">ダウンロード</a><a href="support.html">サポート</a><a href="about.html">概要</a><a href="contact.html">お問い合わせ</a><a href="https://github.com/yurtemre7/sonora">ソースコード</a></nav><select class="theme-select" aria-label="テーマ"><option value="system">システム</option><option value="light">ライト</option><option value="dark">ダーク</option></select></div>
   <div class="footer__bottom"><span>© 2026 Sonora · MIT ライセンス</span><span><a href="../impressum.html">Impressum</a> · <a href="../privacy.html">プライバシー (EN)</a> · <a href="../accessibility.html">アクセシビリティ (EN)</a> · <a href="../index.html" hreflang="en" lang="en">English</a></span></div>
 </div></footer>
 </body>

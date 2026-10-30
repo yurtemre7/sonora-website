@@ -26,7 +26,7 @@ try{m=localStorage.getItem(K)||'system';}catch(e){}
 function apply(){r.setAttribute('data-theme',m==='system'?(mq.matches?'light':'dark'):m);}
 apply();
 if(mq.addEventListener)mq.addEventListener('change',function(){if(m==='system')apply();});
-document.addEventListener('DOMContentLoaded',function(){var sel=document.querySelector('.nav__theme');if(!sel)return;sel.value=m;
+document.addEventListener('DOMContentLoaded',function(){var sel=document.querySelector('.theme-select');if(!sel)return;sel.value=m;
 sel.addEventListener('change',function(){m=sel.value;try{if(m==='system')localStorage.removeItem(K);else localStorage.setItem(K,m);}catch(e){}apply();});});})();
 </script>
 <link rel="icon" href="/favicon.ico" sizes="48x48">
@@ -39,7 +39,7 @@ sel.addEventListener('change',function(){m=sel.value;try{if(m==='system')localSt
 <body>
 <header class="nav"><div class="container nav__inner">
   <a class="brand" href="/"><span class="brand__mark" aria-hidden="true"></span>Sonora</a>
-  <nav class="nav__links" aria-label="Main"><a href="/index.html">Home</a><a href="/download.html">Download</a><a href="/support.html">Support</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a class="nav__lang" href="/ja/index.html" hreflang="ja" lang="ja">日本語</a><select class="nav__theme" aria-label="Theme"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option></select></nav>
+  <nav class="nav__links" aria-label="Main"><a href="/index.html">Home</a><a href="/download.html">Download</a><a href="/support.html">Support</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a class="nav__lang" href="/ja/index.html" hreflang="ja" lang="ja">日本語</a></nav>
   <a class="btn btn--primary nav__cta" href="/download.html">Download</a>
   <button class="nav__toggle" type="button" aria-expanded="false">Menu</button>
 </div></header>
