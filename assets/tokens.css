@@ -1,36 +1,36 @@
-/* Signal · design tokens. The only place values live. */
+/* Sonora · design tokens. The only place values live. */
 @font-face{font-family:"Space Grotesk";src:url("fonts/space-grotesk-latin-wght-normal.woff2") format("woff2");font-weight:300 700;font-style:normal;font-display:swap;}
 @font-face{font-family:"Inter";src:url("fonts/inter-latin-wght-normal.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap;}
 @font-face{font-family:"JetBrains Mono";src:url("fonts/jetbrains-mono-latin-wght-normal.woff2") format("woff2");font-weight:100 800;font-style:normal;font-display:swap;}
 :root{
   /* Colour */
-  --color-bg: #0B0D10;
-  --color-surface: #12161B;
-  --color-card: #151A20;
-  --color-text: #E9EDF1;
+  --color-bg: #0F0C0C;
+  --color-surface: #181312;
+  --color-card: #1D1716;
+  --color-text: #F3EBE7;
   --color-heading: #FFFFFF;
-  --color-muted: #9AA4AF;
-  --color-border: rgba(233,237,241,.12);
-  --color-border-strong: rgba(233,237,241,.35);
-  --color-accent: #C8F135;
-  --color-accent-hover: #D7F96A;
-  --color-accent-text: #0B0D10;
-  --color-accent-strong: #C8F135;
-  --color-accent-soft: rgba(200,241,53,.12);
-  --color-inverse-bg: #C8F135;
-  --color-inverse-text: #0B0D10;
-  --color-inverse-muted: #2B3410;
-  --color-inverse-border: rgba(11,13,16,.4);
-  --color-inverse-action: #0B0D10;
-  --color-inverse-action-hover: #1C222A;
-  --color-inverse-action-text: #C8F135;
-  --color-nav-bg: rgba(11,13,16,.8);
-  --color-footer-bg: #0B0D10;
-  --color-footer-text: #E9EDF1;
-  --color-footer-border: rgba(233,237,241,.12);
-  --color-input-bg: #12161B;
-  --color-focus: #C8F135;
-  --color-error: #FF6B6B;
+  --color-muted: #AFA29C;
+  --color-border: rgba(243,235,231,.12);
+  --color-border-strong: rgba(243,235,231,.35);
+  --color-accent: #FF6B3D;
+  --color-accent-hover: #FF8460;
+  --color-accent-text: #0F0C0C;
+  --color-accent-strong: #FF6B3D;
+  --color-accent-soft: rgba(255,107,61,.14);
+  --color-inverse-bg: #FF6B3D;
+  --color-inverse-text: #0F0C0C;
+  --color-inverse-muted: #3A1608;
+  --color-inverse-border: rgba(15,12,12,.4);
+  --color-inverse-action: #0F0C0C;
+  --color-inverse-action-hover: #241C1A;
+  --color-inverse-action-text: #FF6B3D;
+  --color-nav-bg: rgba(15,12,12,.8);
+  --color-footer-bg: #0F0C0C;
+  --color-footer-text: #F3EBE7;
+  --color-footer-border: rgba(243,235,231,.12);
+  --color-input-bg: #181312;
+  --color-focus: #FF6B3D;
+  --color-error: #FF5C8A;
 
   /* Type */
   --font-display: "Space Grotesk", system-ui, sans-serif;
@@ -44,12 +44,12 @@
   --leading-display: 1.0;
 
   /* Shape */
-  --radius-button: 10px;
-  --radius-card: 14px;
-  --radius-input: 10px;
-  --radius-pill: 6px;
-  --radius-mark: 6px;
-  --radius-bullet: 2px;
+  --radius-button: 12px;
+  --radius-card: 20px;
+  --radius-input: 12px;
+  --radius-pill: 999px;
+  --radius-mark: 8px;
+  --radius-bullet: 999px;
   --shadow-card: none;
 
   /* Spacing scale */
@@ -76,8 +76,8 @@
   --border-width-strong: 2px;
 
   /* Motion */
-  --motion-fast: .18s;
-  --motion-slow: .7s;
+  --motion-fast: .12s;
+  --motion-slow: .45s;
   --motion-ease: cubic-bezier(.2,.7,.2,1);
-  --motion-rise: 16px;
+  --motion-rise: 12px;
 }
