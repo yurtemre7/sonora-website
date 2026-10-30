@@ -1,0 +1,83 @@
+/* Signal · design tokens. The only place values live. */
+@font-face{font-family:"Space Grotesk";src:url("fonts/space-grotesk-latin-wght-normal.woff2") format("woff2");font-weight:300 700;font-style:normal;font-display:swap;}
+@font-face{font-family:"Inter";src:url("fonts/inter-latin-wght-normal.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap;}
+@font-face{font-family:"JetBrains Mono";src:url("fonts/jetbrains-mono-latin-wght-normal.woff2") format("woff2");font-weight:100 800;font-style:normal;font-display:swap;}
+:root{
+  /* Colour */
+  --color-bg: #0B0D10;
+  --color-surface: #12161B;
+  --color-card: #151A20;
+  --color-text: #E9EDF1;
+  --color-heading: #FFFFFF;
+  --color-muted: #9AA4AF;
+  --color-border: rgba(233,237,241,.12);
+  --color-border-strong: rgba(233,237,241,.35);
+  --color-accent: #C8F135;
+  --color-accent-hover: #D7F96A;
+  --color-accent-text: #0B0D10;
+  --color-accent-strong: #C8F135;
+  --color-accent-soft: rgba(200,241,53,.12);
+  --color-inverse-bg: #C8F135;
+  --color-inverse-text: #0B0D10;
+  --color-inverse-muted: #2B3410;
+  --color-inverse-border: rgba(11,13,16,.4);
+  --color-inverse-action: #0B0D10;
+  --color-inverse-action-hover: #1C222A;
+  --color-inverse-action-text: #C8F135;
+  --color-nav-bg: rgba(11,13,16,.8);
+  --color-footer-bg: #0B0D10;
+  --color-footer-text: #E9EDF1;
+  --color-footer-border: rgba(233,237,241,.12);
+  --color-input-bg: #12161B;
+  --color-focus: #C8F135;
+  --color-error: #FF6B6B;
+
+  /* Type */
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-label: "JetBrains Mono", ui-monospace, monospace;
+  --weight-display: 600;
+  --weight-button: 600;
+  --tracking-display: -0.035em;
+  --tracking-label: 0;
+  --label-case: none;
+  --leading-display: 1.0;
+
+  /* Shape */
+  --radius-button: 10px;
+  --radius-card: 14px;
+  --radius-input: 10px;
+  --radius-pill: 6px;
+  --radius-mark: 6px;
+  --radius-bullet: 2px;
+  --shadow-card: none;
+
+  /* Spacing scale */
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px; --space-5: 24px;
+  --space-6: 32px; --space-7: 48px; --space-8: 72px; --space-9: 112px;
+  --gutter: clamp(20px, 4vw, 40px);
+  --container: 1160px;
+  --section-pad: clamp(72px, 10vw, 128px);
+  --hero-pad: clamp(72px, 12vw, 160px);
+  --hero-width: 52rem;
+
+  /* Type scale (fluid) */
+  --text-display: clamp(2.75rem, 7vw, 5.5rem);
+  --text-h1: clamp(2.4rem, 5.5vw, 4.25rem);
+  --text-h2: clamp(1.9rem, 3.8vw, 3rem);
+  --text-h3: clamp(1.3rem, 2vw, 1.6rem);
+  --text-lead: clamp(1.1rem, 1.6vw, 1.3rem);
+  --text-body: 1rem;
+  --text-small: .875rem;
+  --leading-body: 1.6;
+
+  /* Lines */
+  --border-width: 1px;
+  --border-width-strong: 2px;
+
+  /* Motion */
+  --motion-fast: .18s;
+  --motion-slow: .7s;
+  --motion-ease: cubic-bezier(.2,.7,.2,1);
+  --motion-rise: 16px;
+}

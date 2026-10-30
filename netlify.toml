@@ -1,0 +1,7 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/storybook"
+  to = "/storybook.html"
+  status = 200

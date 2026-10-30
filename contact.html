@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact · Relay</title>
+<meta name="description" content="Get in touch with Relay.">
+<meta property="og:title" content="Contact · Relay">
+<meta property="og:description" content="Get in touch with Relay.">
+<link rel="stylesheet" href="assets/tokens.css">
+<link rel="stylesheet" href="assets/components.css">
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<header class="nav"><div class="container nav__inner">
+  <a class="brand" href="index.html"><span class="brand__mark" aria-hidden="true"></span>Relay</a>
+  <nav class="nav__links" aria-label="Main"><a href="index.html">Home</a><a href="pricing.html">Pricing</a><a href="about.html">About</a><a href="contact.html" aria-current="page">Contact</a></nav>
+  <a class="btn btn--primary nav__cta" href="contact.html">Get in touch</a>
+  <button class="nav__toggle" type="button" aria-expanded="false">Menu</button>
+</div></header>
+<main>
+<section class="page-hero"><div class="container"><div class="hero__inner" data-reveal>
+  <p class="eyebrow">Contact</p><h1 class="h1">Tell us what you need.</h1><p class="lead measure">We read every message and reply within one working day.</p>
+</div></div></section>
+<section class="section section--tight"><div class="container split">
+  <form class="form card" name="contact" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="company-website" novalidate data-reveal>
+    <input type="hidden" name="form-name" value="contact">
+    <p class="hp"><label>Leave this empty <input name="company-website" tabindex="-1" autocomplete="off"></label></p>
+    <div class="form__row">
+      <div class="field"><label class="label" for="name">Name</label><input class="input" id="name" name="name" autocomplete="name" required aria-describedby="name-err"><p class="field__error" id="name-err" hidden>Please enter your name.</p></div>
+      <div class="field"><label class="label" for="email">Email</label><input class="input" id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-err"><p class="field__error" id="email-err" hidden>Please enter an email we can reply to.</p></div>
+    </div>
+    <div class="field"><label class="label" for="message">Message</label><textarea class="input" id="message" name="message" required aria-describedby="message-err"></textarea><p class="field__error" id="message-err" hidden>Please tell us a little about what you need.</p></div>
+    <button class="btn btn--primary" type="submit">Send message</button>
+    <p class="small">By sending this form you agree that we use your details to reply to you. See our privacy notice.</p>
+  </form>
+  <aside class="stack stack--lg" data-reveal><h2 class="h3">What happens next</h2><p class="small">You get our reply within one working day. No newsletters, no sales sequences.</p><hr class="rule"><p class="small">Prefer email? Write to hello@example.com</p></aside>
+</div></section>
+</main>
+<script>
+(function(){var f=document.querySelector('form[name=contact]');if(!f)return;
+function check(el){var v=el.value.trim(),bad=!v;if(!bad&&el.type==='email')bad=!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);var m=document.getElementById(el.id+'-err');if(bad)el.setAttribute('aria-invalid','true');else el.removeAttribute('aria-invalid');if(m)m.hidden=!bad;return !bad;}
+f.addEventListener('submit',function(e){var first=null;[].forEach.call(f.querySelectorAll('[required]'),function(el){if(!check(el)&&!first)first=el;});if(first){e.preventDefault();first.focus();}});
+[].forEach.call(f.querySelectorAll('[required]'),function(el){el.addEventListener('input',function(){if(el.getAttribute('aria-invalid'))check(el);});});})();
+</script>
+<footer class="footer"><div class="container">
+  <div class="footer__top"><a class="brand" href="index.html"><span class="brand__mark" aria-hidden="true"></span>Relay</a><nav class="footer__links" aria-label="Footer"><a href="index.html">Home</a><a href="pricing.html">Pricing</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav></div>
+  <div class="footer__bottom"><span>© 2026 Relay</span><span>Impressum · Privacy</span></div>
+</div></footer>
+</body>
+</html>
