@@ -13,10 +13,10 @@ A website for Sonora: a free, open source music player that lets everyday people
 - The design system repository is the source of truth. The website only uses what is in it.
 
 ## Stack
-Plain HTML, CSS and a little JavaScript. No build step. Hosted on Netlify, connected to the website repository. The contact form uses Netlify Forms.
+Plain HTML, CSS and a little JavaScript. No build step. Hosted on Netlify, connected to the website repository. There is no contact form: the contact page links to email, GitHub issues and Telegram (t.me/emredev).
 
 ## Pages
-`index.html` (home) · `download.html` (replaces pricing: the app is free) · `support.html` (install guide, FAQ) · `about.html` · `contact.html` · `thanks.html` (after the form) · `impressum.html` · `privacy.html` · `accessibility.html` · `404.html`. Japanese versions of the main pages live in `ja/` (legal pages stay English). Also `sitemap.xml`, `robots.txt`, share image `assets/img/og.png`.
+`index.html` (home) · `download.html` (replaces pricing: the app is free) · `support.html` (install guide, FAQ) · `about.html` · `contact.html` · `impressum.html` · `privacy.html` · `accessibility.html` · `404.html`. Japanese versions of the main pages live in `ja/` (legal pages stay English). Also `sitemap.xml`, `robots.txt`, share image `assets/img/og.png`.
 
 ## How we work: the loop
 1. Design in Claude chat: prototype the page, try versions, check phone and desktop.
