@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sonora on iPhone · Sonora</title>
+<meta name="description" content="Install Sonora on iPhone with a sideloading tool and add your music from the Files app, Finder or inside the app.">
+<link rel="canonical" href="https://sonora.yurtemre.de/ios.html">
+<link rel="alternate" hreflang="en" href="https://sonora.yurtemre.de/ios.html">
+<link rel="alternate" hreflang="ja" href="https://sonora.yurtemre.de/ja/ios.html">
+<link rel="alternate" hreflang="x-default" href="https://sonora.yurtemre.de/ios.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sonora">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Sonora on iPhone · Sonora">
+<meta property="og:description" content="Install Sonora on iPhone with a sideloading tool and add your music from the Files app, Finder or inside the app.">
+<meta property="og:url" content="https://sonora.yurtemre.de/ios.html">
+<meta property="og:image" content="https://sonora.yurtemre.de/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Sonora music player on an Android phone">
+<meta name="twitter:card" content="summary_large_image">
+<script>
+(function(){try{var K='sonora-lang',d=document;
+d.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[hreflang]');if(a)try{localStorage.setItem(K,a.getAttribute('hreflang'));}catch(x){}});
+var s=localStorage.getItem(K),l=s||((navigator.languages&&navigator.languages[0])||navigator.language||'').slice(0,2).toLowerCase();if(l==='ja')location.replace('ja/ios.html');}catch(e){}})();
+(function(){var K='sonora-theme',m='system',r=document.documentElement,mq=window.matchMedia('(prefers-color-scheme: light)');
+try{m=localStorage.getItem(K)||'system';}catch(e){}
+function apply(){r.setAttribute('data-theme',m==='system'?(mq.matches?'light':'dark'):m);}
+apply();
+if(mq.addEventListener)mq.addEventListener('change',function(){if(m==='system')apply();});
+document.addEventListener('DOMContentLoaded',function(){var sel=document.querySelector('.theme-select');if(!sel)return;sel.value=m;
+sel.addEventListener('change',function(){m=sel.value;try{if(m==='system')localStorage.removeItem(K);else localStorage.setItem(K,m);}catch(e){}apply();});});})();
+</script>
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon-192.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/tokens.css">
+<link rel="stylesheet" href="assets/components.css">
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<header class="nav"><div class="container nav__inner">
+  <a class="brand" href="index.html"><span class="brand__mark" aria-hidden="true"></span>Sonora</a>
+  <nav class="nav__links" aria-label="Main"><a href="index.html">Home</a><a href="download.html">Download</a><a href="support.html">Support</a><a href="about.html">About</a><a href="contact.html">Contact</a><a class="nav__lang" href="ja/ios.html" hreflang="ja" lang="ja">日本語</a></nav>
+  <a class="btn btn--primary nav__cta" href="download.html">Download</a>
+  <button class="nav__toggle" type="button" aria-expanded="false">Menu</button>
+</div></header>
+<main>
+<section class="page-hero"><div class="container"><div class="hero__inner" data-reveal>
+  <p class="eyebrow">iPhone</p><h1 class="h1">Sonora on iPhone.</h1><p class="lead measure">Sonora is not on the App Store. Every release includes an unsigned IPA that you install with a sideloading tool. iOS also works a little differently: music lives in the app’s own folder.</p>
+  <div class="btn-row"><a class="btn btn--primary" href="https://github.com/yurtemre7/sonora/releases/latest">Get the IPA</a><a class="btn btn--secondary" href="#music">Adding music</a></div>
+</div></div></section>
+<section class="section section--tight"><div class="container">
+  <div class="card" data-reveal><p class="small"><strong>Good to know:</strong> the iOS version is new. So far it has only been tested on an iOS simulator, not on a real iPhone. It needs iOS 15 or newer. Please report problems. <a class="link" href="https://github.com/yurtemre7/sonora/issues">Open an issue</a></p></div>
+</div></section>
+<section class="section section--tight" id="install"><div class="container">
+  <div class="section-head" data-reveal><p class="eyebrow">Install</p><h2 class="h2">Sideload the IPA.</h2><p class="lead measure">iOS refuses to install an unsigned app directly, not from Safari and not from the Files app. A sideloading tool signs it with your own Apple ID and installs it.</p></div>
+  <div class="steps"><div class="step" data-reveal data-delay="0"><h3 class="h3">Download the IPA</h3><p class="small">Get sonora-ios.ipa from the latest release on GitHub.</p></div><div class="step" data-reveal data-delay="80"><h3 class="h3">Turn on Developer Mode</h3><p class="small">On iOS 16 and later: Settings, Privacy & Security, Developer Mode. Then restart the phone.</p></div><div class="step" data-reveal data-delay="160"><h3 class="h3">Install with a tool</h3><p class="small">Pick a tool below, add the IPA and sign in with your Apple ID.</p></div></div>
+  <div class="grid grid--2" style="margin-top:var(--space-6)">
+    <div class="card card--feature" data-reveal><h3 class="h3">AltStore</h3><p class="small">Install AltServer on a Mac or Windows PC, then open the IPA in AltStore on the iPhone. It refreshes the app in the background while the computer is nearby on the same Wi-Fi.</p><a class="link" href="https://altstore.io/">altstore.io</a></div>
+    <div class="card card--feature" data-reveal data-delay="80"><h3 class="h3">SideStore</h3><p class="small">Works like AltStore, but refreshes on the iPhone itself. After the one-time setup you do not need a computer.</p><a class="link" href="https://sidestore.io/">sidestore.io</a></div>
+    <div class="card card--feature" data-reveal><h3 class="h3">Sideloadly</h3><p class="small">A desktop tool for Windows and macOS. Connect the iPhone, drag in the IPA, enter your Apple ID and click Start.</p><a class="link" href="https://sideloadly.io/">sideloadly.io</a></div>
+    <div class="card card--feature" data-reveal data-delay="80"><h3 class="h3">TrollStore</h3><p class="small">Installs permanently with no expiry, but only works on specific iOS versions.</p></div>
+  </div>
+  <div class="stack" style="margin-top:var(--space-6)" data-reveal><h3 class="h3">After installing</h3><ul class="list"><li>Open Settings, General, VPN & Device Management, and trust your Apple ID profile. Then open Sonora.</li><li>A free Apple ID allows 3 sideloaded apps at a time, and the app expires after 7 days until it is refreshed. AltStore and SideStore refresh it automatically. Apple’s paid developer programme lifts this to one year.</li><li>To update, install the newer IPA over the old one. Do not delete the app first, or your music goes with it.</li><li>Sonora is not affiliated with or endorsed by these tools.</li></ul></div>
+</div></section>
+<section class="section section--surface" id="music"><div class="container">
+  <div class="section-head" data-reveal><p class="eyebrow">Your music</p><h2 class="h2">Adding music on iPhone.</h2><p class="lead measure">This is different from Android. iOS apps can only read their own folder, so Sonora plays from Documents/Music inside the app. Put your files there first. Nothing is uploaded anywhere.</p></div>
+  <div class="grid grid--3">
+    <div class="card card--feature" data-reveal><span class="card__icon">A</span><h3 class="h3">With the Files app</h3><p class="small">No computer needed. Open Sonora once so it creates its folder. In Files, go to Browse, On My iPhone, Sonora, Music, and copy your songs in. Then pull down on the song list in Sonora, or tap Sync Now in Settings.</p></div>
+    <div class="card card--feature" data-reveal data-delay="80"><span class="card__icon">B</span><h3 class="h3">With a Mac</h3><p class="small">Connect the iPhone and select it in Finder. Open the Files tab, expand Sonora and drag your music into the Music folder. Then run Sync Now in Sonora.</p></div>
+    <div class="card card--feature" data-reveal data-delay="160"><span class="card__icon">C</span><h3 class="h3">Inside the app</h3><p class="small">Tap Add music in onboarding, in Settings or on the empty library screen. Pick one or more audio files and Sonora copies them into its Music folder. Run Sync Now if they do not show up at once.</p></div>
+  </div>
+</div></section>
+<section class="section"><div class="container split">
+  <div class="section-head" data-reveal><p class="eyebrow">Good to know</p><h2 class="h2">Tips and limits.</h2></div>
+  <div class="faq" data-reveal><details><summary>How should I organise the folder?</summary><p>Music/Artist/Album/Track.mp3 works best. When a file has no artist or album tags, Sonora uses these folder names instead.</p></details><details><summary>Which formats work?</summary><p>MP3, M4A/AAC, FLAC and WAV are the safe choices, and the only ones the Add music picker offers. Others such as Opus, OGG or WMA depend on your iOS version.</p></details><details><summary>How do lyrics work?</summary><p>Put a .lrc or .txt file with the same name next to the song. Sonora finds it when you sync.</p></details><details><summary>How do I remove songs?</summary><p>Delete them in the Files app, then run Sync Now.</p></details><details><summary>Where is my music stored?</summary><p>On the iPhone, inside Sonora. It uses storage and is removed if you delete the app. It is included in device backups by default.</p></details><details><summary>What is missing compared to Android?</summary><p>No equalizer or pitch controls (speed presets work), no home screen widget, no CarPlay, no +1 min or End timer buttons, and no in-app updater. The sleep timer itself works. Lock screen and Control Center controls and background playback work, but have only been checked in a simulator.</p></details></div>
+</div></section>
+<section class="section section--inverse"><div class="container cta" data-reveal>
+  <div class="stack"><h2 class="h2">Questions or problems?</h2><p class="lead">The iOS version is new and we want it to work. Tell us what happens.</p></div>
+  <div class="btn-row"><a class="btn btn--primary" href="contact.html">Contact us</a></div>
+</div></section>
+</main>
+<footer class="footer"><div class="container">
+  <div class="footer__top"><a class="brand" href="index.html"><span class="brand__mark" aria-hidden="true"></span>Sonora</a><nav class="footer__links" aria-label="Footer"><a href="index.html">Home</a><a href="download.html">Download</a><a href="support.html">Support</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="https://github.com/yurtemre7/sonora">Source code</a></nav><select class="theme-select" aria-label="Theme"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option></select></div>
+  <div class="footer__bottom"><span>© 2026 Sonora · MIT licensed</span><span><a href="impressum.html">Impressum</a> · <a href="privacy.html">Privacy</a> · <a href="accessibility.html">Accessibility</a> · <a href="ja/ios.html" hreflang="ja" lang="ja">日本語</a></span></div>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iPhone で使う Sonora · Sonora</title>
+<meta name="description" content="サイドロードツールで Sonora を iPhone にインストールし、ファイルアプリ、Finder、アプリ内から音楽を追加する方法。">
+<link rel="canonical" href="https://sonora.yurtemre.de/ja/ios.html">
+<link rel="alternate" hreflang="en" href="https://sonora.yurtemre.de/ios.html">
+<link rel="alternate" hreflang="ja" href="https://sonora.yurtemre.de/ja/ios.html">
+<link rel="alternate" hreflang="x-default" href="https://sonora.yurtemre.de/ios.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sonora">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="iPhone で使う Sonora · Sonora">
+<meta property="og:description" content="サイドロードツールで Sonora を iPhone にインストールし、ファイルアプリ、Finder、アプリ内から音楽を追加する方法。">
+<meta property="og:url" content="https://sonora.yurtemre.de/ja/ios.html">
+<meta property="og:image" content="https://sonora.yurtemre.de/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Android スマホで動く Sonora ミュージックプレーヤー">
+<meta name="twitter:card" content="summary_large_image">
+<script>
+(function(){try{var K='sonora-lang',d=document;
+d.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[hreflang]');if(a)try{localStorage.setItem(K,a.getAttribute('hreflang'));}catch(x){}});
+}catch(e){}})();
+(function(){var K='sonora-theme',m='system',r=document.documentElement,mq=window.matchMedia('(prefers-color-scheme: light)');
+try{m=localStorage.getItem(K)||'system';}catch(e){}
+function apply(){r.setAttribute('data-theme',m==='system'?(mq.matches?'light':'dark'):m);}
+apply();
+if(mq.addEventListener)mq.addEventListener('change',function(){if(m==='system')apply();});
+document.addEventListener('DOMContentLoaded',function(){var sel=document.querySelector('.theme-select');if(!sel)return;sel.value=m;
+sel.addEventListener('change',function(){m=sel.value;try{if(m==='system')localStorage.removeItem(K);else localStorage.setItem(K,m);}catch(e){}apply();});});})();
+</script>
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/img/icon-192.png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/tokens.css">
+<link rel="stylesheet" href="../assets/components.css">
+<script src="../assets/site.js" defer></script>
+</head>
+<body>
+<header class="nav"><div class="container nav__inner">
+  <a class="brand" href="index.html"><span class="brand__mark" aria-hidden="true"></span>Sonora</a>
+  <nav class="nav__links" aria-label="メイン"><a href="index.html">ホーム</a><a href="download.html">ダウンロード</a><a href="support.html">サポート</a><a href="about.html">概要</a><a href="contact.html">お問い合わせ</a><a class="nav__lang" href="../ios.html" hreflang="en" lang="en">English</a></nav>
+  <a class="btn btn--primary nav__cta" href="download.html">ダウンロード</a>
+  <button class="nav__toggle" type="button" aria-expanded="false">メニュー</button>
+</div></header>
+<main>
+<section class="page-hero"><div class="container"><div class="hero__inner" data-reveal>
+  <p class="eyebrow">iPhone</p><h1 class="h1">iPhone で使う Sonora。</h1><p class="lead measure">Sonora は App Store にはありません。各リリースには署名なしの IPA が含まれていて、サイドロードツールでインストールします。iOS では音楽の置き場所も少し違い、アプリ専用のフォルダに入れます。</p>
+  <div class="btn-row"><a class="btn btn--primary" href="https://github.com/yurtemre7/sonora/releases/latest">IPA を入手</a><a class="btn btn--secondary" href="#music">音楽の追加</a></div>
+</div></div></section>
+<section class="section section--tight"><div class="container">
+  <div class="card" data-reveal><p class="small"><strong>ご注意:</strong> iOS 版は新しいものです。これまでは iOS シミュレーターでのみ検証しており、実機の iPhone ではまだ試していません。iOS 15 以降が必要です。不具合があればご報告ください。 <a class="link" href="https://github.com/yurtemre7/sonora/issues">issue を作成する</a></p></div>
+</div></section>
+<section class="section section--tight" id="install"><div class="container">
+  <div class="section-head" data-reveal><p class="eyebrow">インストール</p><h2 class="h2">IPA をサイドロードする。</h2><p class="lead measure">署名のないアプリは、Safari や「ファイル」アプリからは直接インストールできません。サイドロードツールがご自身の Apple ID で署名してインストールします。</p></div>
+  <div class="steps"><div class="step" data-reveal data-delay="0"><h3 class="h3">IPA をダウンロード</h3><p class="small">GitHub の最新リリースから sonora-ios.ipa を入手します。</p></div><div class="step" data-reveal data-delay="80"><h3 class="h3">デベロッパモードをオン</h3><p class="small">iOS 16 以降: 設定、プライバシーとセキュリティ、デベロッパモード。その後 iPhone を再起動します。</p></div><div class="step" data-reveal data-delay="160"><h3 class="h3">ツールでインストール</h3><p class="small">下のツールを選び、IPA を追加して Apple ID でサインインします。</p></div></div>
+  <div class="grid grid--2" style="margin-top:var(--space-6)">
+    <div class="card card--feature" data-reveal><h3 class="h3">AltStore</h3><p class="small">Mac または Windows PC に AltServer を入れ、iPhone の AltStore で IPA を開きます。同じ Wi-Fi 上にパソコンがあれば、バックグラウンドで自動的に更新されます。</p><a class="link" href="https://altstore.io/">altstore.io</a></div>
+    <div class="card card--feature" data-reveal data-delay="80"><h3 class="h3">SideStore</h3><p class="small">AltStore と同様ですが、更新は iPhone 上だけで行えます。初回設定のあとはパソコンが要りません。</p><a class="link" href="https://sidestore.io/">sidestore.io</a></div>
+    <div class="card card--feature" data-reveal><h3 class="h3">Sideloadly</h3><p class="small">Windows / macOS 用のデスクトップツール。iPhone を接続して IPA をドラッグし、Apple ID を入力して Start をクリックします。</p><a class="link" href="https://sideloadly.io/">sideloadly.io</a></div>
+    <div class="card card--feature" data-reveal data-delay="80"><h3 class="h3">TrollStore</h3><p class="small">期限なしで永続的にインストールできますが、特定の iOS バージョンでのみ使えます。</p></div>
+  </div>
+  <div class="stack" style="margin-top:var(--space-6)" data-reveal><h3 class="h3">インストールのあとで</h3><ul class="list"><li>設定、一般、VPN とデバイス管理を開き、ご自身の Apple ID のプロファイルを信頼します。その後 Sonora を開きます。</li><li>無料の Apple ID では同時に 3 つまでで、更新しないと 7 日で期限切れになります。AltStore と SideStore は自動で更新します。Apple の有料デベロッパプログラムなら 1 年になります。</li><li>更新は、新しい IPA を上書きインストールします。先にアプリを削除すると、中の音楽も消えるので避けてください。</li><li>Sonora はこれらのツールとは無関係で、承認も受けていません。</li></ul></div>
+</div></section>
+<section class="section section--surface" id="music"><div class="container">
+  <div class="section-head" data-reveal><p class="eyebrow">あなたの音楽</p><h2 class="h2">iPhone で音楽を追加する。</h2><p class="lead measure">Android とは違う点です。iOS のアプリは自分専用のフォルダしか読み取れないため、Sonora はアプリ内の Documents/Music から再生します。先にファイルをそこへ入れてください。何もアップロードされません。</p></div>
+  <div class="grid grid--3">
+    <div class="card card--feature" data-reveal><span class="card__icon">A</span><h3 class="h3">ファイルアプリで</h3><p class="small">パソコン不要です。まず Sonora を一度開いてフォルダを作らせます。ファイルアプリで、ブラウズ、このiPhone内、Sonora、Music と進み、曲をコピーします。その後 Sonora の曲リストを下に引っ張るか、設定の「今すぐ同期」をタップします。</p></div>
+    <div class="card card--feature" data-reveal data-delay="80"><span class="card__icon">B</span><h3 class="h3">Mac の Finder で</h3><p class="small">iPhone を接続して Finder で選択します。ファイルタブを開いて Sonora を展開し、音楽を Music フォルダにドラッグします。その後 Sonora で「今すぐ同期」を実行します。</p></div>
+    <div class="card card--feature" data-reveal data-delay="160"><span class="card__icon">C</span><h3 class="h3">アプリ内から</h3><p class="small">オンボーディング、設定、空のライブラリ画面で「音楽を追加」をタップします。音声ファイルを選ぶと、Sonora が Music フォルダにコピーします。すぐに表示されなければ「今すぐ同期」を実行してください。</p></div>
+  </div>
+</div></section>
+<section class="section"><div class="container split">
+  <div class="section-head" data-reveal><p class="eyebrow">知っておくと便利</p><h2 class="h2">ヒントと制限。</h2></div>
+  <div class="faq" data-reveal><details><summary>フォルダはどう整理すればいい?</summary><p>Music/アーティスト/アルバム/曲.mp3 がおすすめです。ファイルにアーティストやアルバムのタグがない場合は、これらのフォルダ名が使われます。</p></details><details><summary>どの形式が使える?</summary><p>MP3、M4A/AAC、FLAC、WAV が確実で、「音楽を追加」の選択画面もこれらのみ表示します。Opus、OGG、WMA などは iOS のバージョンによります。</p></details><details><summary>歌詞は?</summary><p>曲と同じ名前の .lrc または .txt ファイルを曲の隣に置きます。同期時に Sonora が見つけます。</p></details><details><summary>曲を削除するには?</summary><p>ファイルアプリで削除してから、「今すぐ同期」を実行します。</p></details><details><summary>音楽はどこに保存される?</summary><p>iPhone の中の Sonora 内です。容量を使い、アプリを削除すると一緒に消えます。デバイスのバックアップには標準で含まれます。</p></details><details><summary>Android と比べて足りないものは?</summary><p>イコライザーとピッチ調整はありません（速度プリセットは使えます）。ホーム画面ウィジェット、CarPlay、「+1 分」「タイマー終了」ボタン、アプリ内アップデートもありません。スリープタイマー自体は使えます。ロック画面とコントロールセンターでの操作とバックグラウンド再生は動作しますが、シミュレーターでしか確認していません。</p></details></div>
+</div></section>
+<section class="section section--inverse"><div class="container cta" data-reveal>
+  <div class="stack"><h2 class="h2">質問や不具合は?</h2><p class="lead">iOS 版は新しいので、きちんと動くようにしたいと考えています。状況を教えてください。</p></div>
+  <div class="btn-row"><a class="btn btn--primary" href="contact.html">お問い合わせ</a></div>
+</div></section>
+</main>
+<footer class="footer"><div class="container">
+  <div class="footer__top"><a class="brand" href="index.html"><span class="brand__mark" aria-hidden="true"></span>Sonora</a><nav class="footer__links" aria-label="フッター"><a href="index.html">ホーム</a><a href="download.html">ダウンロード</a><a href="support.html">サポート</a><a href="about.html">概要</a><a href="contact.html">お問い合わせ</a><a href="https://github.com/yurtemre7/sonora">ソースコード</a></nav><select class="theme-select" aria-label="テーマ"><option value="system">システム</option><option value="light">ライト</option><option value="dark">ダーク</option></select></div>
+  <div class="footer__bottom"><span>© 2026 Sonora · MIT ライセンス</span><span><a href="../impressum.html">Impressum</a> · <a href="../privacy.html">プライバシー (EN)</a> · <a href="../accessibility.html">アクセシビリティ (EN)</a> · <a href="../ios.html" hreflang="en" lang="en">English</a></span></div>
+</div></footer>
+</body>
+</html>
